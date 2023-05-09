@@ -51,11 +51,117 @@
             </li>
           </ul>
         </address>
+        <!---- burger button ---->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-icon" width="32" height="22">
+            <use href="./images/icon.svg#icon-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- nav menu mobile -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle-btn js-close-menu" type="button">
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icon.svg#icon-close-black"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu">
+          <li class="item">
+            <a href="./index.html" class="mobile-menu-header activ link"
+              >Studio</a
+            >
+          </li>
+          <li class="item">
+            <a href="./portfolio.html" class="mobile-menu-header link"
+              >Portfolio</a
+            >
+          </li>
+          <li class="item">
+            <a href="" class="mobile-menu-header link">Contacts</a>
+          </li>
+        </ul>
+
+        <address class="mobile-address">
+          <ul class="mobile-contacs list">
+            <li class="item">
+              <a href="tel:+110001111111" class="mobile-contacs-tel link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-contacs-mail link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="mobile-socials list">
+          <li class="social-list-item">
+            <a
+              class="social-link soc-footer link"
+              href="http://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram ikon"
+            >
+              <svg class="social-ikon" width="24" height="24">
+                <use href="./images/icon.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a
+              class="social-link soc-footer link"
+              href="http://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter ikon"
+            >
+              <svg class="social-ikon" width="24" height="24">
+                <use href="./images/icon.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a
+              class="social-link soc-footer link"
+              href="http://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook ikon"
+            >
+              <svg class="social-ikon" width="24" height="24">
+                <use href="./images/icon.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a
+              class="social-link soc-footer link"
+              href="http://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="linkedin ikon"
+            >
+              <svg class="social-ikon" width="24" height="24">
+                <use href="./images/icon.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
     <main>
-      <!--hero section  -->
+      <!----- hero section ----->
       <section class="hero-section section">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
@@ -64,8 +170,8 @@
           </button>
         </div>
       </section>
-      <!-- modal window -->
-      <div class="backdrop is-hidden" data-modal>
+      <!----- modal window ----->
+      <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="close-btn" data-modal-close>
             <svg class="close-svg" width="8" height="8">
@@ -122,9 +228,9 @@
             <button class="order-srv button" type="submit">Send</button>
           </form>
         </div>
-      </div>
-      <!-- section 1 -->
-      <section class="section">
+      </div> -->
+      <!----- section 1 ----->
+      <section class="section features">
         <div class="container">
           <h2 class="title-section hidden">Features</h2>
           <ul class="list container-list">
@@ -179,8 +285,8 @@
           </ul>
         </div>
       </section>
-      <!-- section  2-->
-      <section class="section-wawd">
+      <!----- section  2----->
+      <!-- <section class="section-wawd">
         <div class="container">
           <h2 class="title-section">What are we doing</h2>
           <ul class="list product">
@@ -210,9 +316,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- section  3-->
-      <section class="our-team section">
+      </section> -->
+      <!----- section  3----->
+      <!-- <section class="our-team section">
         <div class="container">
           <h2 class="title-section-team">Our Team</h2>
           <ul class="list product">
@@ -470,9 +576,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- section 4 -->
-      <section class="section">
+      </section> -->
+      <!----- section 4 ----->
+      <!-- <section class="section">
         <div class="container">
           <h2 class="title-section-team">Customers</h2>
 
@@ -551,10 +657,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <!-- footer section -->
-    <footer class="footer">
+    <!----- footer section ----->
+    <!-- <footer class="footer">
       <div class="container footer-item">
         <div class="container-logo">
           <a class="link logo footer-logo" href="./index.html"
@@ -637,7 +743,14 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
