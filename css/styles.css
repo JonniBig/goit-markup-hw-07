@@ -544,6 +544,8 @@ img {
   visibility: visible;
   pointer-events: initial;
   transition: opacity var(--anim-slow), visibility var(--anim-slow);
+
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -774,13 +776,13 @@ img {
 .container-list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 72px;
 }
 @media only screen and (min-width: 768px) {
   .container-list {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     max-width: 768px;
     gap: 72px 24px;
   }
@@ -1028,17 +1030,40 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
 .container-list-button {
   display: flex;
-  justify-content: center;
-  margin-bottom: 72px;
+  justify-content: flex-start;
+  margin-bottom: 48px;
   gap: 24px;
+  flex-wrap: wrap;
 }
+@media only screen and (min-width: 768px) {
+  .container-list-button {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .container-list-button {
+    margin-bottom: 72px;
+  }
+}
+
 .cards {
-  width: calc((100% - 48px) / 3);
   background-color: var(--white);
 }
+
+@media only screen and (min-width: 768px) {
+  .cards {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .cards {
+    width: calc((100% - 48px) / 3);
+  }
+}
+
 .cards-link {
   display: block;
   transition: box-shadow var(--anim);
@@ -1079,6 +1104,11 @@ img {
 .portfolio .container-list {
   flex-wrap: wrap;
   row-gap: 48px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .portfolio .container-list {
+    row-gap: 48px;
+  }
 }
 
 .team-dscr-portfolio {
@@ -1135,7 +1165,7 @@ img {
     align-items: flex-start;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1158px) {
   .container-logo {
     margin-right: 120px;
   }
