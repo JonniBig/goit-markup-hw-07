@@ -130,7 +130,15 @@ img {
 }
 .header-item .logo {
   margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 22px;
 }
+@media only screen and (min-width: 768px) {
+  .header-item .logo {
+    padding-bottom: 24px;
+  }
+}
+
 .footer-logo {
   margin-bottom: 16px;
 }
@@ -214,6 +222,14 @@ img {
     letter-spacing: 0.04em;
 
     transition: color var(--anim);
+  }
+}
+@media only screen and (min-width: 1158px) {
+  /* desk */
+  .address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -376,7 +392,11 @@ img {
 
   color: var(--iris);
 }
-
+@media only screen and (min-width: 320px) and (max-width: 427px) {
+  .mobile-contacs-tel {
+    font-size: 24px;
+  }
+}
 .mobile-contacs-mail {
   font-weight: 500;
   font-size: 20px;
@@ -389,6 +409,11 @@ img {
 .mobile-socials {
   display: flex;
   gap: 56px;
+}
+@media only screen and (min-width: 320px) and (max-width: 427px) {
+  .mobile-socials {
+    gap: 30px;
+  }
 }
 /* ------------main studio-------------*/
 /* -----hero section----- */
@@ -469,18 +494,12 @@ img {
     }
   }
 }
-/* .hero-section {
-  background-color: var(--navy-blue);
-  padding: 188px 0;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/studio/section1/office.jpg);
-  
-  max-width: 1440px;
-  
-} */
+@media only screen and (min-width: 1158px) {
+  .hero-section {
+    padding: 188px 0;
+  }
+}
+
 .main-title {
   font-weight: 700;
   font-size: 36px;
@@ -573,6 +592,12 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--anim-slow), opacity var(--anim-slow);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 427px) {
+  .modal {
+    width: calc(100% - 20px);
+  }
 }
 @media only screen and (min-width: 768px) {
   .modal {
@@ -1149,6 +1174,12 @@ img {
     justify-content: flex-start;
   }
 }
+@media only screen and (min-width: 1158px) {
+  .footer-item {
+    gap: 0;
+    justify-content: flex-start;
+  }
+}
 .footer-text {
   width: 264px;
   font-size: 16px;
@@ -1210,18 +1241,10 @@ img {
 
   transition: background-color var(--anim);
 }
-.subscribe {
-  margin-left: auto;
-}
 
-@media only screen and (min-width: 768px) {
-  .subscribe {
-    margin-left: 0;
-  }
-}
 @media only screen and (min-width: 1158px) {
   .subscribe {
-    margin-left: auto;
+    margin-left: 80px;
   }
 }
 .sbc-form {
